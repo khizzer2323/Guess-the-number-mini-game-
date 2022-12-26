@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Rubik+80s+Fade&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="index.css">
+    <title>Guess the Number</title>
+</head>
+<body id="body">
+
+<button  
+onclick="func.again()">Again !</button> <span class="range"> < Between 1 to 20  > </span>
+    <h1 class="heading">Guess the Number  !</h1>
+    
+    <div style="width:100%; height:5px; background-color:white;"></div>
+    <div style="position:relative; width:200px; height:80px; background-color:white;  margin:auto;  bottom:40px;" class="question">?</div>
+    <div class="wrapper">
+       <center> <input type="number" autofocus min="0" max="20" id="entered" value=""> 
+        <span id="guessing">Start Guessing ......</span></center>
+        <br> <center><button style="margin:auto; margin-top:8px;" class="check" onclick="func.check()">Check !</button></center>
+    
+    </div>
+    <p style="display:block; "class="score"> </p>
+
+    <p style="display:block;" id="highScore"> High Score : 0</p>
+
+    <script src="index.js"></script>
+</body>
+</html>
